@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#40404F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="23dp"
+                android:layout_height="18dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:fontFamily="@font/poppins"
+                android:textColor="#C82424"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"/>
+
+            <ImageView
+                android:id="@+id/updateButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/edit"/>
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-3dp"
+                android:src="@drawable/delete" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:maxLines="3"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:maxLines="3"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/priorityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="priority"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:maxLines="3"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="30dp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
